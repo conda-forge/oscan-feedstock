@@ -1,11 +1,11 @@
-About oscan
-===========
+About oscan-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oscan-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyrustic/oscan
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oscan-feedstock/blob/main/LICENSE.txt)
 
 Summary: Scanner used to build Pyrustic Backstage
 
