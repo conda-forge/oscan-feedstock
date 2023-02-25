@@ -1,5 +1,5 @@
 {% set name = "oscan" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oscan-{{ version }}.tar.gz
-  sha256: 9880bfc85717efd28e711b2aee0577895fb18f98f8cbee290f5f9ab79e8c4128
+  sha256: 0012794f9ede6e603e769841eb9ce6a3c5b1afb65fb4d663094e20aa2fa2d0eb
 
 build:
   entry_points:
