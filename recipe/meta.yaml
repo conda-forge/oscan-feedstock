@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oscan-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oscan-{{ version }}.tar.gz
   sha256: 0012794f9ede6e603e769841eb9ce6a3c5b1afb65fb4d663094e20aa2fa2d0eb
 
 build:
@@ -14,14 +14,15 @@ build:
     - oscan = oscan.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
+    - setuptools
   run:
-    - python >=3.5
+    - python >={{ python_min }}
 
 test:
   source_files:
@@ -36,6 +37,7 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pyrustic/oscan
